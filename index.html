@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga Final Project Basics Landing Page</title>
+    <style>
+      body {
+        background: linear-gradient(
+          109.6deg,
+          rgb(33, 25, 180) 11.2%,
+          rgb(253, 29, 29) 55.2%,
+          rgb(252, 176, 69) 91.1%
+        );
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: #2019b3;
+        font-family: fantasy;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: center;
+      }
+      h2 {
+        color: #2019b3;
+        text-align: center;
+        font-family: fantasy;
+        font-size: 36px;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 20px;
+        color: #4c1c9a;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: lighter;
+      }
+      h4 {
+        text-align: center;
+        font-size: 15px;
+        color: #4c1c9a;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: lighter;
+      }
+      p {
+        line-height: 1.5;
+        text-align: center;
+        font-size: 20px;
+        color: #4c1c9a;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align: start;
+      }
+      h5 {
+        text-align: center;
+        color: #4c1c9a;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 20px;
+      }
+      footer {
+        margin: 20px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .container {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.4);
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        display: block;
+        margin: 0 auto;
+        max-width: 900px;
+        height: auto;
+        padding: 20px;
+      }
+      .cover-image img {
+        border: 5px solid white;
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 10px;
+        transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+      }
+      .cover-image:hover {
+        transform: scale(1.5);
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        grid-gap: 15px;
+      }
+      .image-gallery img {
+        display: block;
+        margin: 0 auto;
+        width: 158px;
+        height: 135px;
+        border: 5px solid white;
+        border-radius: 10px;
+        transition: transform 160ms ease-in-out filter 200ms ease-in;
+      }
+      .image-gallery img:hover {
+        transform: scale(2);
+      }
+
+      .yoga {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: #2119b4;
+        color: white;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      .yoga:hover {
+        background-color: white;
+        color: #2119b4;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .dark-button {
+        margin: 0 auto;
+        background-color: #2119b4;
+        color: white;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+      .dark-button:hover {
+        background-color: white;
+        color: #2119b4;
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .dark {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(69, 86, 102) 0%,
+          rgb(34, 34, 34) 90%
+        );
+        filter: grayscale(100%);
+      }
+
+      .yogaAlliance {
+        text-align: center;
+        font-size: 18px;
+        color: #4c1c9a;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      @media (max-width: 768px) {
+        .body {
+          text-align: center;
+          align-content: center;
+        }
+        .container {
+          display: block;
+          align-content: center;
+        }
+        .image-gallery {
+          display: flex;
+          flex-direction: column;
+        }
+        .dark-button {
+          display: block;
+          align-content: center;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-button">Dark Theme</button>
+
+    <div class="container">
+      <h1>Yoga</h1>
+      <h2>Certified Yoga Instructor</h2>
+      <hr />
+      <h3>Lokah Samastah Sukinho Bhavantu</h3>
+      <h4>May All Beings Everywhere Be Happy and Free</h4>
+      <hr />
+      <br />
+      <span class="cover-image">
+        <a
+          href="https://www.yogaalliance.org/TeacherPublicProfile?tid=239476"
+          target="_blank"
+          width="300"
+        >
+          <img
+            src="
+              https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/096/original/Just-Be.jpeg?1676709448
+            "
+            alt="Yoga-in nature, cresent moon pose, prayer"
+          />
+        </a>
+        <br />
+      </span>
+      <div class="image-gallery">
+        <img
+          src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/092/original/EPK-I.JPG?1676708067
+          "
+          alt="Yoga-flying splits variation"
+        />
+
+        <img
+          src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/094/original/Ardha-Chandrasana.jpeg?1676708095
+          "
+          alt="Yoga-half moon pose"
+        />
+
+        <img
+          src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/088/original/Utkata-Konasana.jpeg?1676708016
+          "
+          alt="Yoga-goddess pose"
+        />
+        <img
+          src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/148/original/Viparita-Virbhadrasana.JPG?1676746467
+          "
+          alt="Yoga-peacful warrior pose"
+        />
+
+        <img
+          src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/068/097/original/Anjaneyasana.jpeg?1676709738
+          "
+          alt="Yoga-cresent moon pose"
+        />
+      </div>
+      <br />
+      <hr />
+
+      <p>
+        What is yoga? I don't believe there is one set answer. Just as we as
+        human beings are ever changing, ever evolving, yoga changes with us and
+        becomes what we need it to be in that moment.
+        <br />
+        <br />
+        Yoga is centering onself through movement, breath, and the quieting of
+        the mind. I believe that yoga allows us to be who we are in that moment
+        and enables us to find solace and peace within. It allows us to accept
+        ourselves as we are so we can open our heart and channel all that is
+        good surrounding us to create balance. Yoga is about allowing yourself
+        to simply BE.
+        <br />
+        <br />
+        Yoga is mastering the feeling of our intensions and decreasing the
+        suffering caused by the mind. When we allow what we focus on to change,
+        our perception changes. Become aware. Acknowledge. Let go.
+        <br />
+      </p>
+
+      <div class="yogaAlliance">
+        <a
+          href="https://www.yogaalliance.org/TeacherPublicProfile?tid=239476"
+          target="_blank"
+          class="learn-more"
+        >
+          <em>Discover more on Yoga Alliance</em>
+        </a>
+      </div>
+      <br />
+
+      <hr />
+      <br />
+      <button class="yoga">CONNECT FOR YOGA CLASSES</button>
+
+      <h5>Some doors only open from within.</h5>
+    </div>
+
+    <footer>Coded with 💜 by <b>Míchelle Findley</b></footer>
+
+    <script>
+      function darkTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+      let darkButton = document.querySelector(".dark-button");
+      darkButton.addEventListener("click", darkTheme);
+
+      function connect() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert(
+          "Namaste " +
+            name +
+            ", I will be in touch shortly! Meanwhile, sending you peace, love and light!🙏💜"
+        );
+      }
+      let yogaButton = document.querySelector(".yoga");
+      yogaButton.addEventListener("click", connect);
+    </script>
+  </body>
+</html>
